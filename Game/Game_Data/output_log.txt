@@ -1,0 +1,52 @@
+Initialize engine version: 5.6.4p2 (278fc6850ee0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 Ti (ID=0x1c82)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   23.21.13.9065
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.025 seconds
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Unity\2d-ninja-platformer\Game\Game_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+The referenced script on this Behaviour (Game Object 'Switch') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'Character') is missing!
+ 
+(Filename:  Line: 1744)
+
+UnloadTime: 2.096482 ms
+The referenced script on this Behaviour (Game Object 'Switch') is missing!
+ 
+(Filename:  Line: 1744)
+
+The referenced script on this Behaviour (Game Object 'Character') is missing!
+ 
+(Filename:  Line: 1744)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.743236 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 958.
+Total: 0.300882 ms (FindLiveObjects: 0.039064 ms CreateObjectMapping: 0.020779 ms MarkObjects: 0.236328 ms  DeleteObjects: 0.004432 ms)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 234c -> priority: 1 
+  Thread -> id: 218c -> priority: 1 

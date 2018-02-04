@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{D46EBAA2-6DC6-DA05-A21A-4148A51D1222}</ProjectGuid>
+    <ProjectGuid>{9F40FFD3-2191-6D2C-E599-5D74C1C5DE36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -46,7 +46,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\CameraControl.cs" />
      <Compile Include="Assets\Scripts\CharacterControl.cs" />
+     <Compile Include="Assets\Scripts\GameOver.cs" />
+     <Compile Include="Assets\Scripts\ManagerHealth.cs" />
+     <Compile Include="Assets\Scripts\ManagerPause.cs" />
+     <Compile Include="Assets\Scripts\Switch.cs" />
+     <Compile Include="Assets\Scripts\sides.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Programm/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
