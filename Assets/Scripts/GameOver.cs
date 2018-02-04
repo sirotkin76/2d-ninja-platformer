@@ -28,15 +28,6 @@ public class GameOver : MonoBehaviour {
 		managerHealth = GameObject.FindGameObjectWithTag("HeathPanel").GetComponent<ManagerHealth>();
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.gameObject.tag == "Player") {
-			death = true;
-			timer = timeDeath;
-			player.GetComponent<Animator>().SetTrigger("isDeath");
-			//player.transform.position = new Vector2 (transform.position.x, player.transform.position.y);
-		}
-	}
-
 	void FixedUpdate() {
 		if (stay && death) {
 			if (timer <= 0) {
@@ -48,6 +39,7 @@ public class GameOver : MonoBehaviour {
 					player.GetComponent<Animator>().SetTrigger("isLife");
 					player.transform.position = player.GetComponent<CharacterControl>().pointLife.transform.position;
 					death = false;
+					player.GetComponent<CharacterControl>().isDeath = false;
 
 				} else {
 					// Отнимаем жизнь у героя
@@ -56,6 +48,15 @@ public class GameOver : MonoBehaviour {
 				}
 			} else 
 				timer -= Time.deltaTime;
+		}
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.tag == "Player") {
+			death = true;
+			timer = timeDeath;
+			player.GetComponent<Animator>().SetTrigger("isDeath");
+			player.GetComponent<CharacterControl>().isDeath = true;
 		}
 	}
 

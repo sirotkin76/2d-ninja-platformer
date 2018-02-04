@@ -31,6 +31,12 @@ public class CharacterControl : MonoBehaviour {
 	private bool doubleJumped;
 	// ---
 
+	// Компонент ManagerHealth
+	private ManagerHealth managerHealth;
+	// Отслеживаем смерть игрока
+	[HideInInspector]
+	public bool isDeath;
+
 	// Отслеживаем куда повернут пероснаж
 	bool right = true;
 
@@ -45,10 +51,13 @@ public class CharacterControl : MonoBehaviour {
 		anim = GetComponent<Animator>();
 		ch_contr = GetComponent <Rigidbody2D>();
 		pointLife = GameObject.FindGameObjectWithTag("PointLife");
+		managerHealth = GameObject.FindGameObjectWithTag("HeathPanel").GetComponent<ManagerHealth>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+		if (managerHealth.curHealth <= 0 || isDeath) return;
 
 		if (Input.GetKey(KeyCode.W) && isGrounded) {
 			anim.SetBool("isDoor", true);
